@@ -1,0 +1,18 @@
+/* GLOBAL RESET */
+
+
+body {
+    /* BACKGROUND */
+    background-color:rgb(241, 250, 247);
+    /*include foliage once drawn up and imported*/
+    /* FONTS */
+    font-family: "Quattrocento Sans", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+    color: rgb(61, 63, 65);
+}
+
+.title {
+    font-family: "Julius Sans One", sans-serif;
+}
