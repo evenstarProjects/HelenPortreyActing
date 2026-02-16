@@ -122,13 +122,14 @@ header {
 /* ----- MAIN ----- */
 main {
     margin-bottom: 3rem;
+    width: 70%;
+    margin: 0 auto;
 }
 
 .grid-container {
-    width: 70%;
-    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    margin: 2rem;
 }
 
 .section1 {
@@ -143,16 +144,28 @@ main {
     grid-column: 9 / span 4;
 }
 
-.getInTouchButton {
-    grid-column: 4 / span 2;
-    padding: 0.5rem;
+.section2 img {
+    border-radius: 0.5rem;
 }
 
-.getInTouchButton a {
+/*
+BUTTON GOING WRONG. NOT RESPONSIVE WHEN SMALL. HYPERLINK TEXT STICKS OUT OF GREEN BOX WHEN WINDOW IS SHRUNK DOWN.
+.buttonContainer {
+    grid-column: 4 / span 2;
+    padding: 0.1rem;
+    background-color: rgb(119, 193, 154);
+    border-radius: 1rem;
+}
+
+.getInTouchButton {
+    background-color: rgb(119, 193, 154);
+    border-radius: 1rem;
+    grid-column: 4 / span 2;
     text-decoration: none;
     font-family: "Julius Sans One", sans-serif;
+    display: block;
 }
-
+*/
 
 /* ----- FOOTER ----- */
 footer {
