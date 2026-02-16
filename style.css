@@ -130,17 +130,25 @@ main {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     margin: 2rem;
+    overflow: auto;
+}
+
+.aboutHeading {
+    grid-row: 1;
+    padding: 0.75rem;
 }
 
 .section1 {
+    grid-row: 2;
     grid-column: 1 / span 8;
 }
 
-.section1 h2, .section1 p {
+.section1 p {
     padding: 0.75rem;
 }
 
 .section2 {
+    grid-row: 2;
     grid-column: 9 / span 4;
 }
 
@@ -148,24 +156,34 @@ main {
     border-radius: 0.5rem;
 }
 
-/*
-BUTTON GOING WRONG. NOT RESPONSIVE WHEN SMALL. HYPERLINK TEXT STICKS OUT OF GREEN BOX WHEN WINDOW IS SHRUNK DOWN.
+
+/* BUTTON GOING WRONG. NOT RESPONSIVE WHEN SMALL. HYPERLINK TEXT STICKS OUT OF GREEN BOX WHEN WINDOW IS SHRUNK DOWN. */
 .buttonContainer {
-    grid-column: 4 / span 2;
-    padding: 0.1rem;
-    background-color: rgb(119, 193, 154);
+    grid-row: 3;
+    grid-column: 3 / span 3;
+
+    padding-block: 0.5rem;
+    background-color: rgb(40, 70, 54);
     border-radius: 1rem;
+
+    min-width:fit-content; /*to prevent the weird overflow issues*/
+    min-height: fit-content; /*to prevent the weird overflow issues*/
 }
 
+
 .getInTouchButton {
-    background-color: rgb(119, 193, 154);
-    border-radius: 1rem;
-    grid-column: 4 / span 2;
-    text-decoration: none;
     font-family: "Julius Sans One", sans-serif;
-    display: block;
+    text-decoration: none;
+    color: azure;
+
+    padding-block: 0.5rem;
+
+    display: block; /*to allow the <a> to inherit width from <section>*/
+    width: inherit; /*to make the <a> the same width as the <section>*/
+    text-align: center; /*to keep the text in the centre of th <a>*/
+    
 }
-*/
+
 
 /* ----- FOOTER ----- */
 footer {
