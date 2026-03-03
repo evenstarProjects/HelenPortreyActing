@@ -184,6 +184,30 @@ h1, h2, h3, h4, h5, h6 {
         background-color: rgb(207, 239, 234);
     }
 
+    .socialsUl {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .socialsUl li {
+        list-style-type: none;
+        padding: 0.5rem;
+        margin-top: 1rem;
+    }
+
+    .copyrightUl {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .copyrightUl li {
+        list-style-type: none;
+        padding: 0.5rem;
+    }
+
 }
 
 
